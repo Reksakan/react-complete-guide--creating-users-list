@@ -7,7 +7,7 @@ import Button from './Button';
 
 const ErrorModal = props => {
   return (
-    <>
+    <React.Fragment>
       <div className={classes.backdrop} onClick={props.onConfirm}></div>
       <Card className={classes.modal}>
         <header className={classes.header}>
@@ -20,7 +20,7 @@ const ErrorModal = props => {
           <Button onClick={props.onConfirm}>Okay</Button>
         </footer>
       </Card>
-    </>
+    </React.Fragment>
   )
 }
 
